@@ -29,8 +29,22 @@ function generateTransaksiId() {
 
 // Fungsi untuk generate ID pelanggan
 function generatePelangganId() {
-    return 'PLG' . date('Ymd') . sprintf('%03d', rand(100, 999));
+    // Menambahkan Jam, Menit, Detik (His) dan 4 digit mikrodetik untuk memastikan ID selalu unik
+    return 'PLG' . date('YmdHis') . substr(microtime(), 2, 4);
 }
+// File: config.php
+
+// ... (kode yang sudah ada) ...
+
+// Fungsi untuk generate ID pelanggan
+
+// TAMBAHKAN FUNGSI BARU DI BAWAH INI
+// Fungsi untuk generate ID item yang unik
+function generateItemId() {
+    return 'ITM' . strtoupper(uniqid());
+}
+
+// ... (sisa kode) ...
 
 // Fungsi untuk format rupiah
 function formatRupiah($angka) {

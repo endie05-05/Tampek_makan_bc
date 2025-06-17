@@ -129,22 +129,22 @@ try {
     }
     
     // Insert detail transaksi
-    $stmt_detail = $pdo->prepare("
-        INSERT INTO detail_transaksi (id_transaksi, id_item, jumlah_item, harga_satuan, subtotal) 
-        VALUES (?, ?, ?, ?, ?)
-    ");
-    
-    foreach ($valid_items as $item) {
-        if (!$stmt_detail->execute([
-            $transaksi_id,
-            $item['id_item'],
-            $item['quantity'],
-            $item['harga_satuan'],
-            $item['subtotal']
-        ])) {
-            throw new Exception('Gagal menyimpan detail transaksi');
-        }
+$stmt_detail = $pdo->prepare("
+    INSERT INTO detail_transaksi (id_transaksi, id_item, jumlah_item, subtotal) 
+    VALUES (?, ?, ?, ?)
+");
+
+foreach ($valid_items as $item) {
+    if (!$stmt_detail->execute([
+        $transaksi_id,
+        $item['id_item'],
+        $item['quantity'],
+        // $item['harga_satuan'] <-- Baris ini dihapus
+        $item['subtotal']
+    ])) {
+        throw new Exception('Gagal menyimpan detail transaksi');
     }
+}
     
     // Generate nomor antrian
     $stmt_count = $pdo->prepare("
@@ -160,7 +160,7 @@ try {
     
     // Insert antrian order
     $stmt_antrian = $pdo->prepare("
-        INSERT INTO antrian_order (order_line, id_transaksi, nomor_urut, status_antrian) 
+        INSERT INTO antrian_order (order_line, id_transaksi, nomor_urut, waktu_masuk_antrian) 
         VALUES (?, ?, ?, 'menunggu')
     ");
     
@@ -169,8 +169,8 @@ try {
     }
     
     // Update status meja menjadi terisi
-    $stmt_update_meja = $pdo->prepare("UPDATE meja SET status_meja = 'terisi' WHERE no_meja = ?");
-    $stmt_update_meja->execute([$no_meja]);
+    // $stmt_update_meja = $pdo->prepare("UPDATE meja SET status_meja = 'terisi' WHERE no_meja = ?");
+    // $stmt_update_meja->execute([$no_meja]);
     
     // Commit transaction
     $pdo->commit();

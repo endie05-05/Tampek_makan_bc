@@ -1,0 +1,38 @@
+2025-06-17 19:12:41 - Memulai transaksi: TRX20250617191241417 untuk pelanggan: andi
+2025-06-17 19:12:41 - Error dalam transaksi: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'harga_satuan' in 'field list'
+2025-06-17 19:17:42 - Memulai transaksi: TRX20250617191742704 untuk pelanggan: andi
+2025-06-17 19:17:42 - Error dalam transaksi: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+2025-06-17 19:18:29 - Memulai transaksi: TRX20250617191829879 untuk pelanggan: andi
+2025-06-17 19:18:29 - Error dalam transaksi: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status_antrian' in 'field list'
+2025-06-17 19:20:17 - Memulai transaksi: TRX20250617192017923 untuk pelanggan: andi
+2025-06-17 19:20:17 - Error dalam transaksi: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status_meja' in 'field list'
+2025-06-17 19:21:40 - Memulai transaksi: TRX20250617192140795 untuk pelanggan: andi
+2025-06-17 19:21:40 - Transaksi berhasil: TRX20250617192140795 dengan total: 25000
+2025-06-17 19:23:17 - Memulai transaksi: TRX20250617192317739 untuk pelanggan: nabila
+2025-06-17 19:23:17 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:23:32 - Memulai transaksi: TRX20250617192332458 untuk pelanggan: nabila
+2025-06-17 19:23:32 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:23:57 - Memulai transaksi: TRX20250617192357331 untuk pelanggan: nabila
+2025-06-17 19:23:57 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:24:41 - Memulai transaksi: TRX20250617192441689 untuk pelanggan: nabila
+2025-06-17 19:24:41 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:24:48 - Memulai transaksi: TRX20250617192448881 untuk pelanggan: nabila
+2025-06-17 19:24:48 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:27:25 - Memulai transaksi: TRX20250617192725667 untuk pelanggan: nabila
+2025-06-17 19:27:25 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:32:04 - Memulai transaksi: TRX20250617193204985 untuk pelanggan: nabila
+2025-06-17 19:32:04 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:33:15 - Memulai transaksi: TRX20250617193315318 untuk pelanggan: nabila
+2025-06-17 19:33:15 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:39:05 - Memulai transaksi: TRX20250617193905202 untuk pelanggan: nabila
+2025-06-17 19:39:05 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:39:57 - Memulai transaksi: TRX20250617193957849 untuk pelanggan: nabila
+2025-06-17 19:39:57 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:42:11 - Memulai transaksi: TRX20250617194211492 untuk pelanggan: amel
+2025-06-17 19:42:11 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:45:28 - Memulai transaksi: TRX20250617194528143 untuk pelanggan: amel
+2025-06-17 19:45:28 - Transaksi berhasil: TRX20250617194528143 dengan total: 18000
+2025-06-17 19:48:38 - Memulai transaksi: TRX20250617194838559 untuk pelanggan: amel
+2025-06-17 19:48:38 - Transaksi berhasil: TRX20250617194838559 dengan total: 26000
+2025-06-17 19:50:09 - Memulai transaksi: TRX20250617195009232 untuk pelanggan: fadil
+2025-06-17 19:50:09 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
