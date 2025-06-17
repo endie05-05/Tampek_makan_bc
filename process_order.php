@@ -159,14 +159,17 @@ foreach ($valid_items as $item) {
     $order_line = 'ORD' . str_pad($nomor_urut, 3, '0', STR_PAD_LEFT);
     
     // Insert antrian order
-    $stmt_antrian = $pdo->prepare("
-        INSERT INTO antrian_order (order_line, id_transaksi, nomor_urut, waktu_masuk_antrian) 
-        VALUES (?, ?, ?, 'menunggu')
-    ");
-    
-    if (!$stmt_antrian->execute([$order_line, $transaksi_id, $nomor_urut])) {
-        throw new Exception('Gagal membuat antrian order');
-    }
+ // Insert antrian order
+// Menambahkan kolom status_antrian dan menggunakan NOW() untuk waktu
+$stmt_antrian = $pdo->prepare("
+    INSERT INTO antrian_order (order_line, id_transaksi, nomor_urut, waktu_masuk_antrian, status_antrian) 
+    VALUES (?, ?, ?, NOW(), 'menunggu')
+");
+
+// Variabel yang di-execute tetap sama karena NOW() dan 'menunggu' ditangani oleh SQL
+if (!$stmt_antrian->execute([$order_line, $transaksi_id, $nomor_urut])) {
+    throw new Exception('Gagal membuat antrian order');
+}
     
     // Update status meja menjadi terisi
     // $stmt_update_meja = $pdo->prepare("UPDATE meja SET status_meja = 'terisi' WHERE no_meja = ?");

@@ -166,7 +166,7 @@ $toko_list = $stmt_toko->fetchAll(PDO::FETCH_ASSOC);
     <div class="container">
         <div class="header">
             <div class="section-title">SECTION 1</div>
-            <div class="website-name">Food Court</div>
+            <div class="website-name">BC FOOD NET</div>
         </div>
         
         <form id="orderForm">

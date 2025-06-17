@@ -36,3 +36,23 @@
 2025-06-17 19:48:38 - Transaksi berhasil: TRX20250617194838559 dengan total: 26000
 2025-06-17 19:50:09 - Memulai transaksi: TRX20250617195009232 untuk pelanggan: fadil
 2025-06-17 19:50:09 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 19:54:53 - Memulai transaksi: TRX20250617195453331 untuk pelanggan: fadil
+2025-06-17 19:54:53 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'PLG2025061' for key 'PRIMARY'
+2025-06-17 20:10:34 - Memulai transaksi: TRX20250617201034149 untuk pelanggan: arrya
+2025-06-17 20:10:34 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`tempat_makan`.`transaksi`, CONSTRAINT `fk_transaksi_pelanggan` FOREIGN KEY (`id_pelanggan`) REFERENCES `pelanggan` (`id_pelanggan`))
+2025-06-17 20:31:29 - Memulai transaksi: TRX20250617203129704 untuk pelanggan: arrya
+2025-06-17 20:31:29 - Transaksi berhasil: TRX20250617203129704 dengan total: 25000
+2025-06-17 20:32:14 - Memulai transaksi: TRX20250617203214786 untuk pelanggan: dodon
+2025-06-17 20:32:14 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'ORD001' for key 'PRIMARY'
+2025-06-17 20:36:53 - Memulai transaksi: TRX20250617203653271 untuk pelanggan: dodon
+2025-06-17 20:36:54 - Error dalam transaksi: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'ORD001' for key 'PRIMARY'
+2025-06-17 20:38:19 - Memulai transaksi: TRX20250617203819898 untuk pelanggan: ap
+2025-06-17 20:38:20 - Transaksi berhasil: TRX20250617203819898 dengan total: 25000
+2025-06-17 20:39:44 - Memulai transaksi: TRX20250617203944286 untuk pelanggan: dodon gtg
+2025-06-17 20:39:44 - Transaksi berhasil: TRX20250617203944286 dengan total: 90000
+2025-06-17 20:43:48 - Memulai transaksi: TRX20250617204348462 untuk pelanggan: messi
+2025-06-17 20:43:48 - Transaksi berhasil: TRX20250617204348462 dengan total: 8000
+2025-06-17 20:45:47 - Memulai transaksi: TRX20250617204547237 untuk pelanggan: gege
+2025-06-17 20:45:47 - Transaksi berhasil: TRX20250617204547237 dengan total: 27000
+2025-06-17 20:47:16 - Memulai transaksi: TRX20250617204716496 untuk pelanggan: ff
+2025-06-17 20:47:16 - Transaksi berhasil: TRX20250617204716496 dengan total: 81000

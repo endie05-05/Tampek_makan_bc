@@ -257,7 +257,7 @@ $detail_items = $stmt_detail->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <div class="container">
         <div class="receipt-header">
-            <div class="receipt-title">FOOD COURT</div>
+            <div class="receipt-title">BC FOOD NET</div>
             <div style="font-size: 14px; margin-bottom: 10px;">STRUK PESANAN</div>
             <div class="order-number"><?= $transaksi['order_line'] ?></div>
             <div class="status-badge status-<?= strtolower($transaksi['status_transaksi']) ?>">
