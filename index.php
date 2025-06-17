@@ -184,8 +184,8 @@ $toko_list = $stmt_toko->fetchAll(PDO::FETCH_ASSOC);
                 No. Meja <span id="selectedMeja">-</span>
             </div>
             
-            <div class="date-display">
-                <?= date('d F Y') ?>
+            <div class="date-display" id="realtime-clock">
+                Memuat jam...
             </div>
             
             <div class="form-group">
@@ -248,6 +248,33 @@ $toko_list = $stmt_toko->fetchAll(PDO::FETCH_ASSOC);
                 link.setAttribute('href', newHref);
             });
         });
+
+        // --- SCRIPT JAM REAL-TIME ---
+        function updateClock() {
+            const clockElement = document.getElementById('realtime-clock');
+            const now = new Date();
+            const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+            const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+            
+            const dayName = days[now.getDay()];
+            const day = now.getDate();
+            const monthName = months[now.getMonth()];
+            const year = now.getFullYear();
+            
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            
+            clockElement.textContent = `${dayName}, ${day} ${monthName} ${year} | ${hours}:${minutes}:${seconds}`;
+        }
+        
+        // Update jam setiap detik
+        setInterval(updateClock, 1000);
+        
+        // Panggil sekali saat halaman dimuat
+        updateClock();
+        // --- AKHIR SCRIPT JAM REAL-TIME ---
+
     </script>
 </body>
 </html>
